@@ -82,12 +82,12 @@ fun QuizApp(
         ),
         Question(
             text = "Quem é nosso professor favorito?",
-            options = listOf("Felipe Thomas", "Rafael", "Lucas Neves", "Gabriel"),
+            options = listOf("Rafael", "Lucas Neves", "Felipe Thomas", "Gabriel"),
             correctAnswer = "Felipe Thomas"
         ),
         Question(
             text = "Qual truque de mágica foi ensinado pelo professor?",
-            options = listOf("Truque de cartas", "Truque de moedas", "Truque de lenços", "Nenhuma das anteriores"),
+            options = listOf("Truque de moedas","Truque de cartas", "Truque de lenços", "Nenhuma das anteriores"),
             correctAnswer = "Truque de cartas"
         ),
         Question(
@@ -102,7 +102,7 @@ fun QuizApp(
         ),
         Question(
             text = "Quem ajudava a turma com conselhos, dúvidas e até choros?",
-            options = listOf("Felipe Thomas", "Gabriel", "Heloísa", "Daniel"),
+            options = listOf("Gabriel", "Heloísa", "Daniel", "Felipe Thomas"),
             correctAnswer = "Felipe Thomas"
         ),
         Question(
@@ -112,12 +112,12 @@ fun QuizApp(
         ),
         Question(
             text = "Quem era o “pacificador oficial” da turma, sempre aparando brigas e rindo junto?",
-            options = listOf("Felipe Thomas", "Isabela", "Gabriel", "Pedro"),
+            options = listOf("Isabela", "Gabriel", "Felipe Thomas", "Pedro"),
             correctAnswer = "Felipe Thomas"
         ),
         Question(
             text = "Quem da turma sempre arrumava confusão, mas fazia todo mundo rir?",
-            options = listOf("Gabriel e Lucas Neves", "Pedro e Vítor", "Felipe Thomas", "Michelã"),
+            options = listOf("Pedro e Vítor", "Gabriel e Lucas Neves", "Felipe Thomas", "Michelã"),
             correctAnswer = "Gabriel e Lucas Neves"
         ),
     )
@@ -160,9 +160,9 @@ fun QuizApp(
 
         is Screen.Invite -> {
             InviteScreen(
-                onYesClick = {
-                    currentScreen = Screen.Initial
-                }
+//                onYesClick = {
+////                    currentScreen = Screen.Initial
+//                }
             )
         }
     }
